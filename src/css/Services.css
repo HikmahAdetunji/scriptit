@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #003087;
+  --secondary-color: #ffd700;
+}
+
+/*Services Section*/
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.services {
+  margin-top: 100px;
+}
+
+ul {
+  list-style: none;
+}
+.services-offered {
+  margin-top: 5px;
+}
+.script-types {
+  background: linear-gradient(to right, #14399a 0%, #2a4fa7 90%);
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+.script-types-heading {
+  font-size: 30px;
+  text-align: start;
+}
+
+.services-handle {
+  background: linear-gradient(to right, #122341 0%, #284066 90%);
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+.support {
+  background-color: #fabe29;
+  padding: 40px;
+  border-radius: 10px;
+  color: black;
+}
+
+/*Responsiveness*/

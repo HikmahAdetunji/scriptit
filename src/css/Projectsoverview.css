@@ -1,0 +1,122 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #fabe29;
+}
+a {
+  text-decoration: none;
+}
+
+.mt-2 {
+  margin-top: 30px;
+}
+.projectsoverview {
+  margin-top: 100px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  padding-bottom: 40px;
+}
+.project-heading {
+  text-align: center;
+
+  font-size: 30px;
+  background-color: var(--secondary-color);
+  padding: 100px;
+}
+
+.projectoverview-item0 {
+  position: relative;
+  text-align: center;
+  background: url("../images/karma.jpg") no-repeat center/cover;
+  width: 600px;
+  height: 200px;
+  margin-top: -60px;
+  margin-left: 310px;
+  border-radius: 5px;
+}
+.projectoverviewitem0-link {
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+  top: 80%;
+  left: 20%;
+}
+.projectoverview-item1 {
+  background: url("../images/ukeconomy.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.projectoverviewitem1-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+.projectoverview-item2 {
+  background: url("../images/documentary.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.projectoverviewitem2-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+.projectoverview-item3 {
+  background: url("../images/luxuryhotel.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.projectoverviewitem3-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+.projectoverview-item4 {
+  background: url("../images/cars.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.projectoverviewitem4-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+.projectoverview-item5 {
+  background: url("../images/glitter.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.projectoverviewitem5-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+
+.projectoverview-item6 {
+  background: url("../images/crimes.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.projectoverviewitem6-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 140px;
+}
+
+/*Responsiveness*/
