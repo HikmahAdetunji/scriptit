@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import "../css/Footer.css";
 
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footerbody">
         <div className="container grid grid-2">
           <div className="footercontact">
-            <h3 className="footercontact-0">Contact us</h3>
+            <h3 className="footercontact-0">Contact Us</h3>
             <p className="footercontact-1">
               <a href="mailto:scriptithub@gmail.com">Mail Us</a>
             </p>
@@ -16,23 +17,25 @@ const Footer = () => {
               <a href="#">Reach us on LinkedIn</a>
             </p>
           </div>
+
           <div className="footerquicknav">
-            <h3 className="footerquicknav-0">Quick Navigations</h3>
+            <h3 className="footerquicknav-0">Quick Navigation</h3>
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <Link to="/about" className="nav-link">
+                  About
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="
-                    portfolio.html"
-                >
-                  Portfolio
-                </a>
+                <Link to="/projects" className="nav-link-three">
+                  Projects
+                </Link>
               </li>
             </ul>
           </div>
@@ -42,5 +45,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;

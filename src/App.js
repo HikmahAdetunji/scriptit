@@ -1,21 +1,20 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
 import Home from "./components/Home1";
-import Services from "./components/Services";
-import Projectsoverview from "./components/Projectsoverview";
+
 import About from "./components/About";
 import Projects from "./components/Projects";
-
+import Celebrity from "./components/Celebrity";
+import Hollywood from "./components/Hollywood";
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/projectsoverview" element={<Projectsoverview />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="celebrity" element={<Celebrity />} />
+        <Route path="hollywood" element={<Hollywood />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="about" element={<About />} />
       </Routes>
     </>
   );

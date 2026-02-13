@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import "../css/Header.css";
 import "../css/Services.css";
 const Services = () => {
   return (

@@ -2,27 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "../css/Header.css";
-
 const Header = () => {
   return (
-    /*Welcome*/
-
-    <div className="welcome ">
+    <div className="welcome">
       <div className="container">
         <div className="grid grid-2">
-          <div>
+          <div className="welcome-part1">
             <h1 className="welcome-vibe">
               The Go-To Scriptwriting Brand for Successful Content Creators.
             </h1>
 
-            <p className="welcome-button flex">
+            <div className="welcome-button flex">
               <button className="welcome-button1">
                 <Link to="/projects" className="welcome-link">
                   View Projects <i class="fa-solid fa-arrow-right"></i>
                 </Link>
               </button>
               <span className="welcome-button2">Work With Us</span>
-            </p>
+            </div>
           </div>
           <div className="scene">
             <div className="logo-container">

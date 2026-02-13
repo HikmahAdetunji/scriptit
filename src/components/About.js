@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import "../App.css";
 import "../css/About.css";
-
 import Footer from "./Footer";
+
 const About = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,22 +16,22 @@ const About = () => {
         setIsSticky(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
-    /*About*/
     <div className="about">
       <div className="nav-about">
         <div className={`navbar-about ${isSticky ? "sticky" : ""}`}>
-          <div className="container flex nav-inner">
+          <div className="container flex nav-inner-about">
             <div className="logo">ScriptIt.</div>
 
             <div
-              className={`hamburger ${menuOpen ? "active" : ""}`}
+              className={`hamburger-two ${menuOpen ? "active" : ""} ${
+                isSticky ? "sticky" : ""
+              }`}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <span></span>
@@ -44,7 +45,7 @@ const About = () => {
               )}
             </div>
 
-            <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
+            <nav className={`nav-menu-about ${menuOpen ? "open" : ""}`}>
               <button
                 className="close-menu"
                 onClick={() => setMenuOpen(false)}
@@ -62,6 +63,7 @@ const About = () => {
                     Home
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link
                     to="/about"
@@ -82,14 +84,19 @@ const About = () => {
                 </li>
               </ul>
             </nav>
-            <button className="hire-about mobile-hire">
+            <button
+              className="hire-about mobile-hire"
+              onClick={() => setMenuOpen(false)}
+            >
               <a href="mailto:scriptithub@gmail.com">Hire Us</a>
             </button>
           </div>
         </div>
       </div>
+
       <div className="aboutdetails-0">
         <h2 className="about-heading">About ScriptIt.</h2>
+
         <p className="about-paragraph">
           For YouTube scripts that connect emotionally, entertain deeply, and
           deliver real value without a single fluff. Every script is crafted
@@ -97,17 +104,19 @@ const About = () => {
         </p>
       </div>
       <hr className="divider" />
+
       <div
         className="
       aboutdetails-1"
       >
         🎯 Our Missions
       </div>
+
       <div className="container grid  aboutdetails-items">
         <div className="aboutdetails-item1">
-          <span className="about-icon"> 🎬 </span>Elevate digital creators with
-          authentic scripts that entertain, inspire, educate, and resonate with
-          their viewers{" "}
+          <span className="about-icon"> 🎬 </span>Elevate you, content creators,
+          with authentic scripts that entertain, inspire, educate, and resonate
+          with their viewers{" "}
         </div>
         <div className="aboutdetails-item2">
           <span className="about-icon">🔊</span> Tailored scripts that are
@@ -135,7 +144,6 @@ const About = () => {
           their audiences and achieve unparalleled success.
         </p>
       </div>
-
       <Footer />
     </div>
   );

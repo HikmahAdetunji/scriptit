@@ -29,3 +29,50 @@
 .testimonialitem-0 {
   font-weight: 400;
 }
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 3rem 1rem;
+  }
+  .testimonials h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .testimonials ul {
+    padding-left: 0;
+  }
+  .testimonials li {
+    font-size: 30px;
+  }
+
+  .testimonial-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding: 1.2rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    justify-content: flex-start !important;
+  }
+
+  .testimonial-item {
+    flex: 0 0 300px;
+
+    width: 300px;
+    min-width: 300px;
+  }
+  .testimonial-details::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-details {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}

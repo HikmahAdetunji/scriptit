@@ -26,7 +26,7 @@ a {
   padding: 100px;
 }
 
-.projectoverview-item0 {
+#projectoverview-item0 {
   position: relative;
   text-align: center;
   background: url("../images/karma.jpg") no-repeat center/cover;
@@ -120,3 +120,40 @@ a {
 }
 
 /*Responsiveness*/
+@media (max-width: 768px) {
+  #projectoverview-item0 {
+    display: none;
+  }
+
+  .project-items {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding: 1.2rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    justify-content: flex-start !important;
+  }
+
+  .project-items > div {
+    flex: 0 0 300px;
+
+    width: 300px;
+    min-width: 300px;
+  }
+  .project-items > img {
+    width: 100%;
+  }
+
+  .project-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-items {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
